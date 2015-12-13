@@ -29,7 +29,8 @@ RUN python -m nltk.downloader all
 # Get the latest Theano 
 RUN pip install Theano
 # Install mecab and these python module 
-RUN apt-get install -y g++ mecab libmecab-dev mecab-ipadic-utf8 && pip install mecab-python3 gdebi
+RUN apt-get install -y g++ mecab libmecab-dev mecab-ipadic-utf8 && pip install mecab-python3 
+RUN apt-get install -y gdebi
 # Install git-core 
 RUN apt-get install -y git-core
 # Install Pylearn2 

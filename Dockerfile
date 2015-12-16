@@ -42,7 +42,7 @@ RUN yum install -y python-pip python-devel atlas-devel pandas nltk BeautifulSoup
 RUN wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python
 
 RUN easy_install -U distribute 
-RUN yum install libpng-devel 
+RUN yum -y install libpng-devel 
 RUN pip install matplotlib
 RUN wget https://download2.rstudio.org/rstudio-server-rhel-0.99.489-x86_64.rpm
 RUN rpm -Uvh https://download2.rstudio.org/rstudio-server-rhel-0.99.489-x86_64.rpm
